@@ -1,0 +1,22 @@
+@import '../../base-styles/_variables';
+
+.accordion {
+  &-wrapper {
+  }
+
+  &-title {
+    border: $primary 2px solid;
+    padding: $spacing-md;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-body {
+    border: $grey 1px solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}

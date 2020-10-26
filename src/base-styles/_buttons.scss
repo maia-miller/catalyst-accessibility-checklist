@@ -1,0 +1,26 @@
+@import 'variables';
+
+button,
+.btn {
+  background-color: $secondary;
+  color: $white;
+  border: $secondary 1px solid;
+  padding: $spacing-md;
+  font-weight: 500;
+  margin: $spacing-md;
+
+  &:hover {
+    background-color: $white;
+    color: $secondary;
+  }
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border: $secondary 1px solid;
+  color: $secondary;
+
+  &:hover {
+    background-color: $secondary;
+  }
+}
