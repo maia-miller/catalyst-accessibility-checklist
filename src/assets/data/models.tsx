@@ -14,7 +14,10 @@ export interface Criterion {
 }
 
 export interface Subheading {
-  content: Element
+  title: string,
+  criteria: Array<Criterion>,
+  resources?: Array<Resource>,
+  codeSamples?: Array<CodeSample>
 }
 
 export interface Resource {
@@ -25,6 +28,6 @@ export interface Resource {
 
 export interface CodeSample {
   title: string,
-  output: string,
+  output?: string,
   code: string
 }
