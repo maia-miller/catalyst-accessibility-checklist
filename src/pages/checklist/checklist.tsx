@@ -18,6 +18,8 @@ const Checklist = (props: Props) => {
               key={index}
               criteria={element.criteria}
               subheadings={element.subheadings}
+              resources={element.resources}
+              codeSamples={element.codeSamples}
             />
           )
         })
