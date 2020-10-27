@@ -6,26 +6,30 @@ import SubheadingComponent from '../../components/subheading/subheading';
 import './accordion.scss';
 
 interface Props {
+  accordionType: string,
   title: string,
   key: number,
   criteria: Array<Criterion>,
   subheadings?: Array<Subheading>
 }
 
-
 const Accordion = (props: Props) => {
+  const { accordionType, title, key, criteria, subheadings } = props
   const [isAccordionOpen, setIsAccordionOpen] = useState(false)
 
   return (
-    <div className="accordion-wrapper" key={props.key}>
+    <div className={accordionType + ' accordion-wrapper'} key={key}>
+
       <div className="accordion-title" onClick={() => {setIsAccordionOpen(!isAccordionOpen)}}>
-        {props.title}
+        {title}
       </div>
+
       <div className="accordion-body-wrapper">
         { isAccordionOpen &&
           <div className="accordion-body">
+
             <ul>
-              {props.criteria.map((criterion: Criterion, index: number) => {
+              {criteria.map((criterion: Criterion, index: number) => {
                 return (
                   <li key={index}>
                     {criterion.description} ({criterion.wcag})
@@ -33,14 +37,21 @@ const Accordion = (props: Props) => {
                 )
               })}
             </ul>
-            {props.subheadings &&
-              props.subheadings.length > 0 &&
-              props.subheadings.map((subheading:
+
+            {subheadings &&
+              subheadings.length > 0 &&
+              subheadings.map((subheading:
               Subheading, index: number) => {
               return (
-                <SubheadingComponent subheading={subheading} key={index} />
+                <Accordion
+                  accordionType={'accordion-subheading'}
+                  title={subheading.title}
+                  key={index}
+                  criteria={subheading.criteria}
+                />
               )
             })}
+
           </div>
         }
       </div>
