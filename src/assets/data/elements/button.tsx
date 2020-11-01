@@ -36,18 +36,16 @@ export const button: Element = {
   subheadings:
     [
       {
-        content: {
-          title: 'Icons as buttons',
-          criteria:
-          [
-            {
-              description: 'Icons as buttons: <br> 1) Wrapping element has aria-label (acts as button title for screen readers) if there is no text on button <br> 2) Icon itself is hidden <br> 3) Use CSS on  to insert icon <br> generally, we hide icons from screen readers and provide other ways for them to access the necessary info',
-              wcag: 'TBD',
-              code: '<button aria-label="Find out more"><i aria-hidden="true"></i></button>',
-              code2: '<button><i aria-hidden="true"></i>Find out more</button> [TBC]'
-            },
-          ]
-        }
+        title: 'Icons as buttons',
+        criteria:
+        [
+          {
+            description: 'Icons as buttons: <br> 1) Wrapping element has aria-label (acts as button title for screen readers) if there is no text on button <br> 2) Icon itself is hidden <br> 3) Use CSS on  to insert icon <br> generally, we hide icons from screen readers and provide other ways for them to access the necessary info',
+            wcag: 'TBD',
+            code: '<button aria-label="Find out more"><i aria-hidden="true"></i></button>',
+            code2: '<button><i aria-hidden="true"></i>Find out more</button> [TBC]'
+          },
+        ]
       }
     ],
   resources:
