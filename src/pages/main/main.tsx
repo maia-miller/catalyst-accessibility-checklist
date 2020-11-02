@@ -27,7 +27,7 @@ const Main = () => {
         const searchableText = `${element.title} ${elementDescriptions.toString()}`
 
         // now search the array
-        if (searchableText.indexOf(searchTerm) > -1) {
+        if (searchableText.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1) {
           searchData.push(element)
         }
       })
