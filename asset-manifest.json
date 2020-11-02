@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/catalyst-accessibility-checklist/static/css/main.717bd12c.chunk.css",
+    "main.js": "/catalyst-accessibility-checklist/static/js/main.3622ab8e.chunk.js",
+    "main.js.map": "/catalyst-accessibility-checklist/static/js/main.3622ab8e.chunk.js.map",
+    "runtime-main.js": "/catalyst-accessibility-checklist/static/js/runtime-main.66809d54.js",
+    "runtime-main.js.map": "/catalyst-accessibility-checklist/static/js/runtime-main.66809d54.js.map",
+    "static/js/2.b94fbd7e.chunk.js": "/catalyst-accessibility-checklist/static/js/2.b94fbd7e.chunk.js",
+    "static/js/2.b94fbd7e.chunk.js.map": "/catalyst-accessibility-checklist/static/js/2.b94fbd7e.chunk.js.map",
+    "static/js/3.4c9e84bf.chunk.js": "/catalyst-accessibility-checklist/static/js/3.4c9e84bf.chunk.js",
+    "static/js/3.4c9e84bf.chunk.js.map": "/catalyst-accessibility-checklist/static/js/3.4c9e84bf.chunk.js.map",
+    "index.html": "/catalyst-accessibility-checklist/index.html",
+    "static/css/main.717bd12c.chunk.css.map": "/catalyst-accessibility-checklist/static/css/main.717bd12c.chunk.css.map",
+    "static/js/2.b94fbd7e.chunk.js.LICENSE.txt": "/catalyst-accessibility-checklist/static/js/2.b94fbd7e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.66809d54.js",
+    "static/js/2.b94fbd7e.chunk.js",
+    "static/css/main.717bd12c.chunk.css",
+    "static/js/main.3622ab8e.chunk.js"
+  ]
+}
